@@ -1,0 +1,46 @@
+package Practice;
+// Sentinel controlled while loop
+
+import java.util.Scanner;
+public class ScoreAverage {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+	System.out.println("Enter grade or -1 to terminate");
+		int grade = input.nextInt();
+		int gradeCounter = 0;
+		int sum = 0;
+		int counter =0;
+		
+		if (grade != -1) {
+		
+			while (grade != -1) {
+				
+				if (grade <= 50) {
+					sum = sum + grade;
+					gradeCounter++;					//keeps track of the frequency of grades equal to or below 50 
+					
+				}
+				
+				System.out.println("Enter grade or -1 to terminate");
+					grade = input.nextInt();
+					if (grade == -1) {
+					}
+					else {
+					}	
+					counter++;					// keeps track of all the grades
+			}
+			
+			int average = sum / gradeCounter;
+		System.out.printf("Average score is %d%n", average);
+		System.out.printf("The frequency of grades equal to or below 50 is %d%n", gradeCounter);
+		}
+						
+		else {
+			System.out.println("Goodbye! ");
+	}
+	}
+}
+
+
