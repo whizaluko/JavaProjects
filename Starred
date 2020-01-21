@@ -1,0 +1,36 @@
+package Practice;
+
+public class Starred {
+
+	public static void main(String[] args) {
+
+		int i = 0;
+		int space = 15;
+		
+		while (i <= 4) {
+			int T1 = 0;
+			int T2 = 0;
+			int sp = 0;
+			
+				while(T1 <= i) {
+					System.out.print("*");
+						T1++;
+				}
+				while (sp < space) {
+				System.out.print(" ");
+					sp++;
+				}
+				while(T2 <= i) {
+					System.out.print("*");
+						T2++;
+				}
+			System.out.println("");
+				i++;
+				space -=2;
+		}
+			
+		} 
+	}
+	
+
+
