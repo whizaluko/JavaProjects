@@ -1,0 +1,32 @@
+package Practice;
+
+public class ProgressiveAddition {
+
+	public static void main(String[] args) {
+  
+	/*From Numbers 1-20
+		Add 2 numbers progressively
+		Then add 6 to the sum
+		If result is equal to 21, skip and continue with the operation*/
+    
+		int secondnum = 1;
+		int num = 0;
+		int sum = 0;
+		int result = 0;
+		int counter = 1;
+		
+		while (counter <= 20) {
+			counter++;
+			num++;
+			secondnum++;
+			 sum = num + secondnum;
+			result = sum + 6;
+	
+			if (result == 21) {
+				continue;
+			}
+			System.out.printf("%d, %d, %d%n",num, secondnum, result);
+		}
+	}
+
+}
